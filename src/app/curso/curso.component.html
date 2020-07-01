@@ -1,0 +1,32 @@
+<div class="bgCourse">
+  <div class="container d-flex justify-content-center p-2">
+    <div class="content">
+      <form
+        class="card p-4"
+        [formGroup]="form"
+        (ngSubmit)="onSubmit(form.value)"
+      >
+        <h4 class="text-center font-weight-bold">Informações sobre o curso</h4>
+        <p><b class="labelCourse"> Sigla:</b> {{ course.sigla }}</p>
+        <p><b class="labelCourse"> Nome curso:</b> {{ course.titulo }}</p>
+        <p><b class="labelCourse"> Frequencia:</b> {{ course.freq }}%</p>
+        <p><b class="labelCourse"> Hora:</b> {{ course.hora }}h</p>
+        <p><b class="labelCourse"> Nota atual:</b> {{ course.nf }}</p>
+
+        <input
+          class="input-course"
+          type="number"
+          placeholder="Nova nota"
+          formControlName="nota"
+          #refNota
+          min="0"
+          max="10"
+        />
+
+        <button *ngIf="refNota.value" type="submit" class="btnEnviar">
+          Enviar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

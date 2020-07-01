@@ -1,0 +1,50 @@
+.bgCourse {
+  background-image: url("../../assets/images/bgDetail.jpg");
+  background-position: center;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  padding-top: 50px;
+}
+
+.content {
+  width: 500px;
+}
+
+.input-course {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-width: 2;
+  border-bottom-color: #49cf96;
+  width: 50%;
+  align-self: center;
+  margin: 16px;
+  font-size: 32px;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.labelCourse {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+}
+
+.btnEnviar {
+  background-color: #49cf96;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 200px;
+  height: 60px;
+  align-self: center;
+  border-radius: 8px;
+}

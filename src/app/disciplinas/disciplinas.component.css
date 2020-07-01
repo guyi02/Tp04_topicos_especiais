@@ -1,0 +1,45 @@
+.main {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  border: 1px solid black;
+  margin: 0 16px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.square {
+  cursor: pointer;
+  height: auto;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  margin: 5px 0;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px;
+}
+
+.titulo {
+  font-size: 12px;
+}
+.freq {
+  font-size: 8px;
+}
+.sigla {
+  font-size: 8px;
+}
+.hora {
+  font-size: 8px;
+}
+.dia {
+  font-size: 8px;
+}
+
+.link:hover {
+  text-decoration: none !important;
+}
